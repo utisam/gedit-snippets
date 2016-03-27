@@ -1,0 +1,395 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="cpp">
+  <snippet override="cpp-Inc">
+    <text><![CDATA[#include <${1:file}>
+$0]]></text>
+    <tag>include</tag>
+    <description>#include &lt;..&gt;</description>
+  </snippet>
+  <snippet override="cpp-inc">
+    <text><![CDATA[#include "${1:file}"
+$0]]></text>
+    <tag>include</tag>
+    <description>#include ".."</description>
+  </snippet>
+  <snippet override="cpp-for">
+    <text><![CDATA[for (${1:int} ${2:i} = ${3:0}; ${2:i} < ${4:n}; ${2:i}${5:++}) {
+	$0
+}]]></text>
+    <tag>for</tag>
+    <description>for loop</description>
+  </snippet>
+  <snippet override="cpp-if">
+    <text><![CDATA[if (${1:condition}) {
+	$0
+}]]></text>
+    <tag>if</tag>
+    <description>if ..</description>
+  </snippet>
+  <snippet override="cpp-main">
+    <text><![CDATA[int main(${1:int argc, char const* argv[]}) {
+	$0
+	return 0;
+}]]></text>
+    <tag>main</tag>
+    <description>main</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[using namespace ${1:std};
+$0]]></text>
+    <tag>using</tag>
+    <description>using namespace</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[const int PRIME_MAX = ${1:1000001};
+bool isPrime[PRIME_MAX];
+void init() {
+	fill(isPrime, isPrime + PRIME_MAX, true);
+	isPrime[0] = isPrime[1] = false;
+	for (int i = 2; i * i <= PRIME_MAX; i++) {
+		if (!isPrime[i]) continue;
+		for (int j = (i << 1); j < PRIME_MAX; j += i) {
+			isPrime[j] = false;
+		}
+	}
+}]]></text>
+    <tag>isprime</tag>
+    <description>isPrime</description>
+  </snippet>
+  <snippet override="cpp-while">
+    <text><![CDATA[while ($1) {
+	$0
+}]]></text>
+    <tag>while</tag>
+    <description>while</description>
+  </snippet>
+
+  <snippet>
+    <text><![CDATA[BOOST_WARN(${1:predicate});
+$0]]></text>
+    <tag>WARN</tag>
+    <description>BOOST_WARN</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_WARN_BITWISE_EQUAL(${1:left}, ${2:right});
+$0]]></text>
+    <tag>WARN_BITWISE_EQUAL</tag>
+    <description>BOOST_WARN_BITWISE_EQUAL</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_WARN_CLOSE(${1:left}, ${2:right}, ${3:tolerance});
+$0]]></text>
+    <tag>WARN_CLOSE</tag>
+    <description>BOOST_WARN_CLOSE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_WARN_CLOSE_FRACTION(${1:left}, ${2:right}, ${3:tolerance});
+$0]]></text>
+    <tag>WARN_CLOSE_FRACTION</tag>
+    <description>BOOST_WARN_CLOSE_FRACTION</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_WARN_EQUAL(${1:left}, ${2:right});
+$0]]></text>
+    <tag>WARN_EQUAL</tag>
+    <description>BOOST_WARN_EQUAL</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_WARN_EQUAL_COLLECTION(${1:left_begin}, ${2:left_end}, ${3:right_begin}, ${4:right_end});
+$0]]></text>
+    <tag>WARN_EQUAL_COLLECTION</tag>
+    <description>BOOST_WARN_EQUAL_COLLECTION</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_WARN_EXCEPTION(${1:expression}, ${2:exception}, ${:predicate});
+$0]]></text>
+    <tag>WARN_EXCEPTION</tag>
+    <description>BOOST_WARN_EXCEPTION</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_WARN_GE(${1:left}, ${2:right});
+$0]]></text>
+    <tag>WARN_GE</tag>
+    <description>BOOST_WARN_GE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_WARN_GT(${1:left}, ${2:right});
+$0]]></text>
+    <tag>WARN_GT</tag>
+    <description>BOOST_WARN_GT</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_WARN_LE(${1:left}, ${2:right});
+$0]]></text>
+    <tag>WARN_LE</tag>
+    <description>BOOST_WARN_LE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_WARN_LT(${1:left}, ${2:right});
+$0]]></text>
+    <tag>WARN_LT</tag>
+    <description>BOOST_WARN_LT</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_WARN_MESSAGE(${1:predicate}, ${2:message});
+$0]]></text>
+    <tag>WARN_MESSAGE</tag>
+    <description>BOOST_WARN_MESSAGE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_WARN_NE(${1:left}, ${2:right});
+$0]]></text>
+    <tag>WARN_NE</tag>
+    <description>BOOST_WARN_NE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_WARN_NO_THROW(${1:expression});
+$0]]></text>
+    <tag>WARN_NO_THROW</tag>
+    <description>BOOST_WARN_NO_THROW</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_WARN_PREDICATE(${1:predicate}, ${2:arguments_list});
+$0]]></text>
+    <tag>WARN_PREDICATE</tag>
+    <description>BOOST_WARN_PREDICATE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_WARN_SMALL(${1:value}, ${2:tolerance});
+$0]]></text>
+    <tag>WARN_SMALL</tag>
+    <description>BOOST_WARN_SMALL</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_WARN_THROW(${1:expression});
+$0]]></text>
+    <tag>WARN_THROW</tag>
+    <description>BOOST_WARN_THROW</description>
+  </snippet>
+
+  <snippet>
+    <text><![CDATA[BOOST_CHECK(${1:predicate});
+$0]]></text>
+    <tag>CHECK</tag>
+    <description>BOOST_CHECK</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_CHECK_BITWISE_EQUAL(${1:left}, ${2:right});
+$0]]></text>
+    <tag>CHECK_BITWISE_EQUAL</tag>
+    <description>BOOST_CHECK_BITWISE_EQUAL</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_CHECK_CLOSE(${1:left}, ${2:right}, ${3:tolerance});
+$0]]></text>
+    <tag>CHECK_CLOSE</tag>
+    <description>BOOST_CHECK_CLOSE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_CHECK_CLOSE_FRACTION(${1:left}, ${2:right}, ${3:tolerance});
+$0]]></text>
+    <tag>CHECK_CLOSE_FRACTION</tag>
+    <description>BOOST_CHECK_CLOSE_FRACTION</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_CHECK_EQUAL(${1:left}, ${2:right});
+$0]]></text>
+    <tag>CHECK_EQUAL</tag>
+    <description>BOOST_CHECK_EQUAL</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_CHECK_EQUAL_COLLECTION(${1:left_begin}, ${2:left_end}, ${3:right_begin}, ${4:right_end});
+$0]]></text>
+    <tag>CHECK_EQUAL_COLLECTION</tag>
+    <description>BOOST_CHECK_EQUAL_COLLECTION</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_CHECK_EXCEPTION(${1:expression}, ${2:exception}, ${:predicate});
+$0]]></text>
+    <tag>CHECK_EXCEPTION</tag>
+    <description>BOOST_CHECK_EXCEPTION</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_CHECK_GE(${1:left}, ${2:right});
+$0]]></text>
+    <tag>CHECK_GE</tag>
+    <description>BOOST_CHECK_GE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_CHECK_GT(${1:left}, ${2:right});
+$0]]></text>
+    <tag>CHECK_GT</tag>
+    <description>BOOST_CHECK_GT</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_CHECK_LE(${1:left}, ${2:right});
+$0]]></text>
+    <tag>CHECK_LE</tag>
+    <description>BOOST_CHECK_LE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_CHECK_LT(${1:left}, ${2:right});
+$0]]></text>
+    <tag>CHECK_LT</tag>
+    <description>BOOST_CHECK_LT</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_CHECK_MESSAGE(${1:predicate}, ${2:message});
+$0]]></text>
+    <tag>CHECK_MESSAGE</tag>
+    <description>BOOST_CHECK_MESSAGE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_CHECK_NE(${1:left}, ${2:right});
+$0]]></text>
+    <tag>CHECK_NE</tag>
+    <description>BOOST_CHECK_NE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_CHECK_NO_THROW(${1:expression});
+$0]]></text>
+    <tag>CHECK_NO_THROW</tag>
+    <description>BOOST_CHECK_NO_THROW</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_CHECK_PREDICATE(${1:predicate}, ${2:arguments_list});
+$0]]></text>
+    <tag>CHECK_PREDICATE</tag>
+    <description>BOOST_CHECK_PREDICATE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_CHECK_SMALL(${1:value}, ${2:tolerance});
+$0]]></text>
+    <tag>CHECK_SMALL</tag>
+    <description>BOOST_CHECK_SMALL</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_CHECK_THROW(${1:expression});
+$0]]></text>
+    <tag>CHECK_THROW</tag>
+    <description>BOOST_CHECK_THROW</description>
+  </snippet>
+
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE(${1:predicate});
+$0]]></text>
+    <tag>REQUIRE</tag>
+    <description>BOOST_REQUIRE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE_BITWISE_EQUAL(${1:left}, ${2:right});
+$0]]></text>
+    <tag>REQUIRE_BITWISE_EQUAL</tag>
+    <description>BOOST_REQUIRE_BITWISE_EQUAL</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE_CLOSE(${1:left}, ${2:right}, ${3:tolerance});
+$0]]></text>
+    <tag>REQUIRE_CLOSE</tag>
+    <description>BOOST_REQUIRE_CLOSE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE_CLOSE_FRACTION(${1:left}, ${2:right}, ${3:tolerance});
+$0]]></text>
+    <tag>REQUIRE_CLOSE_FRACTION</tag>
+    <description>BOOST_REQUIRE_CLOSE_FRACTION</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE_EQUAL(${1:left}, ${2:right});
+$0]]></text>
+    <tag>REQUIRE_EQUAL</tag>
+    <description>BOOST_REQUIRE_EQUAL</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE_EQUAL_COLLECTION(${1:left_begin}, ${2:left_end}, ${3:right_begin}, ${4:right_end});
+$0]]></text>
+    <tag>REQUIRE_EQUAL_COLLECTION</tag>
+    <description>BOOST_REQUIRE_EQUAL_COLLECTION</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE_EXCEPTION(${1:expression}, ${2:exception}, ${:predicate});
+$0]]></text>
+    <tag>REQUIRE_EXCEPTION</tag>
+    <description>BOOST_REQUIRE_EXCEPTION</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE_GE(${1:left}, ${2:right});
+$0]]></text>
+    <tag>REQUIRE_GE</tag>
+    <description>BOOST_REQUIRE_GE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE_GT(${1:left}, ${2:right});
+$0]]></text>
+    <tag>REQUIRE_GT</tag>
+    <description>BOOST_REQUIRE_GT</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE_LE(${1:left}, ${2:right});
+$0]]></text>
+    <tag>REQUIRE_LE</tag>
+    <description>BOOST_REQUIRE_LE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE_LT(${1:left}, ${2:right});
+$0]]></text>
+    <tag>REQUIRE_LT</tag>
+    <description>BOOST_REQUIRE_LT</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE_MESSAGE(${1:predicate}, ${2:message});
+$0]]></text>
+    <tag>REQUIRE_MESSAGE</tag>
+    <description>BOOST_REQUIRE_MESSAGE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE_NE(${1:left}, ${2:right});
+$0]]></text>
+    <tag>REQUIRE_NE</tag>
+    <description>BOOST_REQUIRE_NE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE_NO_THROW(${1:expression});
+$0]]></text>
+    <tag>REQUIRE_NO_THROW</tag>
+    <description>BOOST_REQUIRE_NO_THROW</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE_PREDICATE(${1:predicate}, ${2:arguments_list});
+$0]]></text>
+    <tag>REQUIRE_PREDICATE</tag>
+    <description>BOOST_REQUIRE_PREDICATE</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE_SMALL(${1:value}, ${2:tolerance});
+$0]]></text>
+    <tag>REQUIRE_SMALL</tag>
+    <description>BOOST_REQUIRE_SMALL</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_REQUIRE_THROW(${1:expression});
+$0]]></text>
+    <tag>REQUIRE_THROW</tag>
+    <description>BOOST_REQUIRE_THROW</description>
+  </snippet>
+
+  <snippet>
+    <text><![CDATA[BOOST_ERROR(${1:message});
+$0]]></text>
+    <tag>ERROR</tag>
+    <description>BOOST_ERROR</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_FAIL(${1:message});
+$0]]></text>
+    <tag>FAIL</tag>
+    <description>BOOST_FAIL</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[BOOST_IS_DEFINED(${1:symbol});
+$0]]></text>
+    <tag>IS_DEFINED</tag>
+    <description>BOOST_IS_DEFINED</description>
+  </snippet>
+
+</snippets>

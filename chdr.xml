@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="chdr">
+  <snippet>
+    <tag>pragma</tag>
+    <text><![CDATA[#pragma once
+$0]]></text>
+    <description>pragma once</description>
+  </snippet>
+</snippets>

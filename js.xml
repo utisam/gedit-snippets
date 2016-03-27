@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="js">
+  <snippet override="js-fun">
+    <description>function</description>
+    <text><![CDATA[function ${1:function_name}(${2:first_argument}) {
+	$0
+}]]></text>
+    <tag>function</tag>
+  </snippet>
+  <snippet>
+    <text><![CDATA[goog.provide('$1');
+$0]]></text>
+    <description>goog.provide</description>
+    <tag>provide</tag>
+  </snippet>
+  <snippet>
+    <text><![CDATA[goog.require('$1');
+$0]]></text>
+    <description>goog.require</description>
+    <tag>require</tag>
+  </snippet>
+  <snippet>
+    <text><![CDATA[/**
+ * @constructor
+ */
+$1 = function($2) {
+	$0
+};]]></text>
+    <description>constructor</description>
+    <tag>constructor</tag>
+  </snippet>
+  <snippet>
+    <text><![CDATA[goog.provide('${1:namespace}.${2:className}');
+
+goog.require('goog.ui.Component');
+goog.require('goog.ui.registry');
+
+
+/**
+ * @constructor
+ * @param {goog.dom.DomHelper=} opt_domHelper Optional DOM helper
+ * @extends {goog.ui.Component}
+ */
+$1.$2 = function(opt_domHelper) {
+	goog.base(this, opt_domHelper);
+
+	$0
+};
+goog.inherits($1.$2, goog.ui.Component);
+
+
+goog.scope(function() {
+	var $2 = $1.$2;
+
+	/**
+	 * @type {string}
+	 */
+	$2.CSS_CLASS = goog.getCssName('${3:cssClassName}');
+
+	goog.ui.registry.setDecoratorByClassName(
+		$2.CSS_CLASS,
+		function() { return new $2(); }
+	);
+
+	/** @override */
+	$2.prototype.createDom = function() {
+		goog.base(this, 'createDom');
+	};
+
+	/** @override */
+	$2.prototype.canDecorate = function(element) {
+		return goog.base(this, 'canDecorate');
+	};
+
+	/** @override */
+	$2.prototype.decorateInternal = function(element) {
+		goog.base(this, 'decorateInternal', element);
+	};
+
+	/** @override */
+	$2.prototype.enterDocument = function() {
+		goog.base(this, 'enterDocument');
+	};
+
+	/** @override */
+	$2.prototype.exitDocument = function() {
+		goog.base(this, 'exitDocument');
+	};
+
+	/** @override */
+	$2.prototype.disposeInternal = function() {
+		goog.base(this, 'disposeInternal');
+	};
+});]]></text>
+    <description>goog.ui.Component</description>
+    <tag>component</tag>
+  </snippet>
+  <snippet>
+    <text><![CDATA[goog.dom.getElement($0);]]></text>
+    <description>goog.dom.getElement</description>
+    <tag>getelement</tag>
+  </snippet>
+  <snippet>
+    <text><![CDATA[this.getDomHelper().getElement($0);]]></text>
+    <description>goog.ui.Component#getDomHelper.getElement</description>
+    <tag>getelement</tag>
+  </snippet>
+  <snippet>
+    <text><![CDATA[this.getHandler().listen(
+	src,
+	type,
+	opt_fn,
+	opt_capture
+);]]></text>
+    <description>goog.ui.Component#getHandler.listen</description>
+    <tag>listen</tag>
+  </snippet>
+</snippets>

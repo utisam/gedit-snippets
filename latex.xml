@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="latex">
+  <snippet override="latex-itd">
+    <text><![CDATA[\item${1:\[description]} ${0:item}]]></text>
+    <tag>item</tag>
+    <description>item[description]</description>
+  </snippet>
+  <snippet override="latex-ssub">
+    <text><![CDATA[\subsubsection{${1:subsubsection name}}\label{${2:label}}
+]]></text>
+    <tag>subsubsection</tag>
+    <description>Sub Sub Section</description>
+  </snippet>
+  <snippet override="latex-sub">
+    <text><![CDATA[\subsection{${1:subsection name}}\label{${2:label}}
+]]></text>
+    <tag>subsection</tag>
+    <description>Sub Section</description>
+  </snippet>
+  <snippet override="latex-sec">
+    <text><![CDATA[\section{${1:section name}}\label{${2:label}}
+]]></text>
+    <tag>section</tag>
+    <description>Section</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[\begin{enumerate}
+	\item $0
+\end{enumerate}]]></text>
+    <tag>enumerate</tag>
+    <description>enumerate</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[\begin{itemize}
+	\item $0
+\end{itemize}]]></text>
+    <description>itemize</description>
+    <tag>itemize</tag>
+  </snippet>
+  <snippet>
+    <text><![CDATA[\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[${1:width=60mm}]{${2:file}}
+		\caption{${3:caption}}
+		\label{fig:${4:label}}
+	\end{center}
+\end{figure}]]></text>
+    <description>figure</description>
+    <tag>figure</tag>
+  </snippet>
+  <snippet>
+    <text><![CDATA[\begin{quotation}
+	$0
+\end{quotation}]]></text>
+    <tag>quotation</tag>
+    <description>quotation</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[\begin{description}
+	\item[${1:description}] ${0:item}
+\end{description}]]></text>
+    <tag>description</tag>
+    <description>description</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[\begin{figure}[htbp]
+	\begin{minipage}{0.5\hsize}
+		\begin{center}
+			\includegraphics[${1:width=60mm}]{${2:file}}
+		\end{center}
+		\caption{${3:caption}}
+		\label{fig:${4:label}}
+	\end{minipage}
+	\begin{minipage}{0.5\hsize}
+		\begin{center}
+			\includegraphics[${5:width=60mm}]{${6:file}}
+		\end{center}
+		\caption{${7:caption}}
+		\label{fig:${8:label}}
+	\end{minipage}
+\end{figure}]]></text>
+    <tag>figre</tag>
+    <description>figure2</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[\documentclass[a4j,10pt]{${1:[jarticle,article,jreport,report,jbook,book]}}
+$0]]></text>
+    <tag>documentclass</tag>
+    <description>documentclass</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[\begin{document}
+\end{document}]]></text>
+    <tag>document</tag>
+    <description>document</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[\begin{eqnarray}
+	$0
+\end{eqnarray}]]></text>
+    <tag>eqnarray</tag>
+    <description>eqnarray</description>
+  </snippet>
+  <snippet>
+    <tag>label</tag>
+    <description>label</description>
+    <text><![CDATA[\label{$1}$0]]></text>
+  </snippet>
+</snippets>

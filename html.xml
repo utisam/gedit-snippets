@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="html">
+  <snippet>
+    <text><![CDATA[<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">]]></text>
+    <tag>meta</tag>
+    <description>MetaUTF-8</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[<meta charset="UTF-8">]]></text>
+    <tag>charset</tag>
+    <description>Charset</description>
+  </snippet>
+</snippets>

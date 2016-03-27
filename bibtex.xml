@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="bibtex">
+  <snippet>
+    <text><![CDATA[@book{
+	author={ $1 }
+	title={ $2 }
+	publisher={ $3 }
+	year={ $4 }
+}]]></text>
+    <tag>book</tag>
+    <description>New snippet</description>
+  </snippet>
+</snippets>

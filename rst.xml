@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="rst">
+  <snippet>
+    <tag>doc</tag>
+    <text><![CDATA[:doc:\`${1:page}\` $0]]></text>
+    <description>doc</description>
+  </snippet>
+    <snippet>
+    <text><![CDATA[.. code-block:: ${1:python}
+
+	$0]]></text>
+    <tag>codeblock</tag>
+    <description>code-block</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[================================
+$1
+================================
+$0]]></text>
+    <tag>=</tag>
+    <description>title</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[$1
+================================
+$0]]></text>
+    <tag>=</tag>
+    <description>section</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[$1
+--------------------------------
+$0]]></text>
+    <tag>-</tag>
+    <description>subsection</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[$1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$0]]></text>
+    <tag>~</tag>
+    <description>subsubsection</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[.. note::
+	$0]]></text>
+    <tag>note</tag>
+    <description>note</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[.. warning::
+	$0]]></text>
+    <tag>warning</tag>
+    <description>warning</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[.. figure:: ${0:path}]]></text>
+    <tag>figure</tag>
+    <description>figure</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[ \`${1:text} <${2:url}>\`_ $0]]></text>
+    <tag>link</tag>
+    <description>link</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[::
+
+	$0]]></text>
+    <tag>block</tag>
+    <description>block</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[.. index:: $0]]></text>
+    <tag>index</tag>
+    <description>index</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[.. contents:: Contents:
+	:local:
+	:depth: 2]]></text>
+    <tag>contents</tag>
+    <description>contents</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:sub:\`${1:n}\`$0]]></text>
+    <tag>sub</tag>
+    <description>sub</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[.. seealso::
+
+	$0]]></text>
+    <tag>seealso</tag>
+    <description>seealso</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[:math:\`$0\`]]></text>
+    <tag>math</tag>
+    <description>math</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[.. literalinclude:: ${1:src}
+	:language: ${2:lang}
+$0]]></text>
+    <tag>literalinclude</tag>
+    <description>literalinclude</description>
+  </snippet>
+</snippets>

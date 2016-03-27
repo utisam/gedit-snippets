@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="python">
+  <snippet override="python-main">
+    <text><![CDATA[import sys
+
+def main():
+	$0
+	return 0
+
+if __name__ == '__main__':
+	${1:sys.exit(main())}
+]]></text>
+    <tag>main</tag>
+    <description>main</description>
+  </snippet>
+  <snippet override="python-py">
+    <text><![CDATA[#!/usr/bin/env python
+#-*- coding:utf-8 -*-
+$0]]></text>
+    <tag>py</tag>
+    <description>#!/usr/bin/env python</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[import pdb; pdb.set_trace()
+$0]]></text>
+    <tag>trace</tag>
+    <description>set_trace</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[import unittest
+
+class $1(unittest.TestCase):
+	def setUp(self):
+		pass
+	def tearDown(self):
+		pass
+	def test_$2(self):
+		$0
+
+if __name__ == '__main__':
+	unittest.main()
+]]></text>
+    <tag>unittest</tag>
+    <description>unittest</description>
+  </snippet>
+  <snippet override="python-def">
+    <text><![CDATA[def ${1:fname}(${2:self}):
+	$0]]></text>
+    <tag>def</tag>
+    <description>New Function</description>
+  </snippet>
+  <snippet override="python-doc">
+    <text><![CDATA["""
+$1
+"""
+$0]]></text>
+    <tag>doc</tag>
+    <description>doc string</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertEqual($1, $2)
+$0]]></text>
+    <tag>asserteq</tag>
+    <description>assertEqual</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertNotEqual($1, $2)
+$0]]></text>
+    <tag>assertneq</tag>
+    <description>assertNotEqual</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertTrue($1, $2)
+$0]]></text>
+    <tag>asserttrue</tag>
+    <description>assertTrue</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertFalse($1, $2)
+$0]]></text>
+    <tag>assertfalse</tag>
+    <description>assertFalse</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertIs($1, $2)
+$0]]></text>
+    <tag>assertis</tag>
+    <description>assertIs</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertIsNot($1, $2)
+$0]]></text>
+    <tag>assertisnot</tag>
+    <description>assertIsNot</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertIsNone($1, $2)
+$0]]></text>
+    <tag>assertisnone</tag>
+    <description>assertIsNone</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertIsNotNone($1, $2)
+$0]]></text>
+    <tag>assertisnotnone</tag>
+    <description>assertIsNotNone</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertIn($1, $2)
+$0]]></text>
+    <tag>assertin</tag>
+    <description>assertIn</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertNotIn($1, $2)
+$0]]></text>
+    <tag>assertnotin</tag>
+    <description>assertNotIn</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertIsInstance($1, $2)
+$0]]></text>
+    <tag>assertisinstance</tag>
+    <description>assertIsInstance</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertNotIsInstance($1, $2)
+$0]]></text>
+    <tag>assertnotisinstance</tag>
+    <description>assertNotIsInstance</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertAlmostEqual($1, $2)
+$0]]></text>
+    <tag>assertalmostequal</tag>
+    <description>assertAlmostEqual</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertNotAlmostEqual($1, $2)
+$0]]></text>
+    <tag>assertnotalmostequal</tag>
+    <description>assertNotAlmostEqual</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertGreater($1, $2)
+$0]]></text>
+    <tag>assertgreater</tag>
+    <description>assertGreater</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertGreaterEqual($1, $2)
+$0]]></text>
+    <tag>assertgreaterequal</tag>
+    <description>assertGreaterEqual</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertLess($1, $2)
+$0]]></text>
+    <tag>assertless</tag>
+    <description>assertLess</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertLessEqual($1, $2)
+$0]]></text>
+    <tag>assertlessequal</tag>
+    <description>assertLessEqual</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertRegexpMatches($1, $2)
+$0]]></text>
+    <tag>assertregexpmatches</tag>
+    <description>assertRegexpMatches</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertNotRegexpMatches($1, $2)
+$0]]></text>
+    <tag>assertnotregexpmatches</tag>
+    <description>assertNotRegexpMatches</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertItemsEqual($1, $2)
+$0]]></text>
+    <tag>assertitemsequal</tag>
+    <description>assertItemsEqual</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertDictContainsSubset($1, $2)
+$0]]></text>
+    <tag>assertdictcontainssubset</tag>
+    <description>assertDictContainsSubset</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertMultiLineEqual($1, $2)
+$0]]></text>
+    <tag>assertmultilineequal</tag>
+    <description>assertMultiLineEqual</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertSequenceEqual($1, $2)
+$0]]></text>
+    <tag>assertsequenceequal</tag>
+    <description>assertSequenceEqual</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertListEqual($1, $2)
+$0]]></text>
+    <tag>assertlistequal</tag>
+    <description>assertListEqual</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertTupleEqual($1, $2)
+$0]]></text>
+    <tag>asserttupleequal</tag>
+    <description>assertTupleEqual</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertSetEqual($1, $2)
+$0]]></text>
+    <tag>assertsetequal</tag>
+    <description>assertSetEqual</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[self.assertDictEqual($1, $2)
+$0]]></text>
+    <tag>assertdictequal</tag>
+    <description>assertDictEqual</description>
+  </snippet>
+  <snippet override="python-class">
+    <text><![CDATA[class ${1:ClassName} (${2:object}):
+	def __init__(self${3:,}):
+		$0]]></text>
+    <tag>class</tag>
+    <description>New Class</description>
+  </snippet>
+  <snippet>
+    <description>assertRaises</description>
+    <text><![CDATA[self.assertRaises(${1:type}, ${2:call}, ${3:arg})
+$0]]></text>
+    <tag>assertraises</tag>
+  </snippet>
+</snippets>

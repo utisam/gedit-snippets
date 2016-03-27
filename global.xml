@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets>
+  <snippet>
+    <text><![CDATA[$(pwd)]]></text>
+    <description>pwd</description>
+    <tag>pwd</tag>
+  </snippet>
+  <snippet>
+    <text><![CDATA[$(toja "$GEDIT_SELECTED_TEXT")]]></text>
+    <tag>toja</tag>
+    <description>toja</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[$(toen "$GEDIT_SELECTED_TEXT")]]></text>
+    <tag>toen</tag>
+    <description>toen</description>
+  </snippet>
+</snippets>

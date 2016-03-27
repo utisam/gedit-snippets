@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="c">
+  <snippet override="c-for">
+    <text><![CDATA[for (${1:int} ${2:i} = ${3:0}; ${2:i} < ${4:n}; ${2:i}${5:++}) {
+	$0
+}]]></text>
+    <tag>for</tag>
+    <description>for loop</description>
+  </snippet>
+  <snippet override="c-main">
+    <text><![CDATA[int main(${1:int argc, char const* argv[]}) {
+	$0
+	return 0;
+}]]></text>
+    <tag>main</tag>
+    <description>main</description>
+  </snippet>
+</snippets>
